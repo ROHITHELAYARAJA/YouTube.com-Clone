@@ -2,8 +2,15 @@
 <html>
 <head>
     <title>YouTube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
     <style>
+        p{
+        font-family: 'Roboto', Arial, sans-serif;
+    }
 
         .search{
             display:block;
@@ -13,27 +20,31 @@
         }
 
         .video-preview{
-            width:320px;
+            width:fit-content;
             display:inline-block;
             vertical-align:top;
-            margin-right:20px;
         }
 
         .thumbnail{
-            width:320px;
-            display:block;
+            width:97%;
+            height: 220px;
+            display:inline-block;
+            object-fit:cover;
+
         }
 
         .video-info-grid{
             display:grid;
             grid-template-columns:50px 1fr;
             margin-top:10px;
+            
         }
 
         .profile-picture{
-            width:40px;
+            width:60px;
             height:40px;
             border-radius:50%;
+    
         }
 
         .video-info{
@@ -44,22 +55,29 @@
             font-size:16px;
             font-weight:500;
             margin-top:0;
-            margin-bottom:8px;
+            margin-left:5px ;
+            margin-bottom:4px;
             line-height:22px;
-            font-family:Arial;
+            
         }
 
         .channel{
             color:gray;
             margin-top:0;
             margin-bottom:4px;
-            font-family:Arial;
+              margin-left:5px ;
         }
-
         .views{
             color:gray;
             margin-top:0;
-            font-family:Arial;
+            margin-bottom:0px ;
+              margin-left:5px ;
+        }
+        .video-frame-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap:20px;
+            row-gap:30px;
         }
 
     </style>
@@ -69,17 +87,20 @@
 
     <input class="search" type="text" placeholder="Search">
 
-    <!-- Video 1 -->
-    <div class="video-preview">
+    <!-- Video s -->
+
+    <div class="video-frame-container">
+        <div class="video-preview">
+        
 
         <img class="thumbnail"
-             src="../thumbanail/bHwf0ojNtzQ-1280x720.webp">
+            src="../thumbanail/bHwf0ojNtzQ-1280x720.webp">
 
         <div class="video-info-grid">
 
             <div>
                 <img class="profile-picture"
-                     src="../Channel/high-1781884510.jpg">
+                    src="../Channel/high-1781884510.jpg">
             </div>
 
             <div class="video-info">
@@ -91,7 +112,7 @@
                 </p>
 
                 <p class="channel">
-                    T-Series
+                    Saregamapa
                 </p>
 
                 <p class="views">
@@ -103,28 +124,26 @@
         </div>
 
     </div>
+    
 
-    <!-- Video 2 -->
     <div class="video-preview">
 
         <img class="thumbnail"
-             src="../thumbanail/iAtoZar5W58-1280x720.webp">
+            src="../thumbanail/iAtoZar5W58-1280x720.webp">
 
         <div class="video-info-grid">
 
             <div>
                 <img class="profile-picture"
-                     src="../Channel/high-1781884510.jpg">
+                    src="../Channel/high-1781884584.jpg">
             </div>
 
             <div class="video-info">
 
                 <p class="title">
-                    Aaya Sher - Lyrical |
-                    The Paradise |
-                    <strong>Nani</strong> |
-                    Anirudh Ravichander |
-                    Srikanth Odela
+                    Aaya Sher - Lyrical | 
+                    The Paradise | <strong>Nani</strong>| 
+                    Anirudh Ravichander | Srikanth Odela
                 </p>
 
                 <p class="channel">
@@ -132,7 +151,38 @@
                 </p>
 
                 <p class="views">
-                    9,888,934 views · Mar 9, 2025
+                    76,868,318 views · Mar 2, 2027
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="video-preview">
+
+        <img class="thumbnail"
+            src="../thumbanail/dImiR3Sr8Wo-1280x720.webp">
+
+        <div class="video-info-grid">
+
+            <div>
+                <img class="profile-picture"
+                    src="../Channel/high-1781965392.jpg">
+            </div>
+
+            <div class="video-info">
+
+                <p class="title">
+                    Neeyum Naanum Anbe - Video Song |
+                     Imaikkaa Nodigal | Vijay Sethupathi, Nayanthara | Hiphop Tamizha
+                </p>
+
+                <p class="channel">
+                   Think Music India
+                </p>
+
+                <p class="views">
+                    993,349,3 views · 7 years ago
                 </p>
 
             </div>
@@ -140,42 +190,106 @@
         </div>
 
     </div>
+    
 
-    <!-- Video 3 -->
     <div class="video-preview">
 
         <img class="thumbnail"
-             src="../thumbanail/iAtoZar5W58-1280x720.webp">
+            src="../thumbanail/bP8ATWCvqzw-1280x720.webp">
 
         <div class="video-info-grid">
 
             <div>
-                <img class="profile-picture"
-                     src="../Channel/high-1781884510.jpg">
+                <img  style=" width:52px;
+            height:55px;
+            border-radius:60%;";
+                    src="../Channel/high-1781965376.jpg">
             </div>
 
             <div class="video-info">
 
                 <p class="title">
-                    Aaya Sher - Lyrical |
-                    The Paradise |
-                    <strong>Nani</strong> |
-                    Anirudh Ravichander |
-                    Srikanth Odela
+                Anuv Jain X Lost Stories - Arz Kiya Hai (Official Video) | Coke Studio Bharat
+
                 </p>
 
                 <p class="channel">
-                    T-Series
+                    Coke Studio India
                 </p>
 
                 <p class="views">
-                    9,888,934 views · Mar 9, 2025
+                    66,918,618 views · 10 month ago
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="video-preview">
+
+        <img class="thumbnail"
+            src="../thumbanail/L8V3ylj4NUA-1280x720.webp">
+
+        <div class="video-info-grid">
+
+            <div>
+                <img class="profile-picture"
+                    src="../Channel/high-1781965392.jpg">
+            </div>
+
+            <div class="video-info">
+
+                <p class="title">
+                 Kadhale Kadhale Video Song | Indru Netru Naalai | Vishnu Vishal | Mia George | Hiphop Tamizhaa
+
+                </p>
+
+                <p class="channel">
+                    Think Music India 
+                </p>
+
+                <p class="views">
+                    34,252,532 views · 10 year ago
                 </p>
 
             </div>
 
         </div>
 
+    </div>
+    
+
+    <div class="video-preview">
+
+        <img class="thumbnail"
+            src="../thumbanail/ufHLYw9q7vQ-1280x720.webp">
+
+        <div class="video-info-grid">
+
+            <div>
+                <img class="profile-picture"
+                    src="../Channel/high-1781884584.jpg">
+            </div>
+
+            <div class="video-info">
+
+                <p class="title">
+                    
+
+Chammak Challo (Muthada Chammak Challo)                </p>
+
+                <p class="channel">
+                    T-Series
+                 
+                </p>
+
+                <p class="views">
+                    34,252,532 views · 7 year ago
+                </p>
+            </div>
+
+        </div>
+    </div>
     </div>
 
 </body>
