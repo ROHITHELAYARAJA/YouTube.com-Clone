@@ -1,0 +1,102 @@
+.header{
+  display: flex;
+  height:38px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-section{
+  width: 120px ;
+  display: flex;
+  align-items: center;
+}
+.hamburger{
+  height: 20px;
+  margin-left:20px ;
+  margin-right:35px ;
+}
+.youtubeLogo{
+  height: 20px;
+}
+.middle-section{
+  flex:1;
+  margin-left:74px ;
+  margin-right: 30px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+.search-group{
+  display: flex;
+  flex: 1;
+  height: 38px;
+  border: 1px solid darkgray;
+  border-radius: 20px;     /* both left and right fully rounded */
+  overflow: hidden;        /* clips input/button to the pill shape */
+}
+.search-bar{
+  flex:1;
+  padding-left:14px ;
+  border:none;
+  outline: none;
+  font-size: 15px;
+
+}
+.search-bar::placeholder{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:15px;
+}
+
+.search-button{
+  width: 40px;
+  background-color: #f0f0f0;
+  border: none;
+  border-left: 1px solid darkgray;  /* just a divider line, not a curve */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button img{
+  height: 20px;
+  width: 20px;
+}
+
+.voice-search-button{
+  height:38px ;
+  width: 38px;
+  margin-left: 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.voice-search-button img{
+  height: 18px;
+  width: 18px;
+}
+.right-section{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-evenly;
+  margin-right:20px ;
+  flex-shrink: 0;
+}
+.uplosd-icon{
+  height: 24px;
+
+}
+.youtube-icon{
+  height: 24px;
+}
+.notification-icon{
+  height: 24px;
+}
+.channel-photo{
+  height:24px;
+  border-radius:16px ;
+  width:24px;
+}
