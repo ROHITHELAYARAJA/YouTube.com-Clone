@@ -3,6 +3,12 @@
                 width:fit-content;
                 display:inline-block;
                 vertical-align:top;
+                border-color: whitesmoke;
+                border-style: solid;
+                border-width: 0.8px;
+            }
+            .thumbnail-row{
+                position: relative;
             }
 
             .thumbnail{
@@ -11,7 +17,6 @@
                 display:inline-block;
                 object-fit:cover;
                 height: fit-content;
-
             }
 
             .video-info-grid{
@@ -22,9 +27,9 @@
             }
 
             .profile-picture{
-                width:60px;
-                height:40px;
-                border-radius:50%;
+                width:40px;
+                height:34px;
+                border-radius:70%;
         
             }
 
@@ -35,7 +40,7 @@
             .title{
                 display:flexbox;
                 flex:1;
-                font-size:16px;
+                font-size:15px;
                 font-weight:500;
                 margin-top:0;
                 margin-left:5px ;
@@ -59,6 +64,41 @@
             .video-frame-container{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                column-gap:20px;
-                row-gap:30px;
+                column-gap:30px;
+                row-gap:40px;
+                width: fit-content;
+
             }
+            @media (max-width:750px){
+                .video-frame-container{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            @media(min-width:751px) and (max-width:999px){
+                  .video-frame-container{
+                    grid-template-columns: 1fr 1fr 1fr ;
+                }
+
+            }
+
+          /*  @media (min-width:1000px){
+                .video-frame-container{
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+            } */
+        .video-time{
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+
+        background-color: black;
+        color: white;
+
+        font-family: Roboto, Arial;
+        font-size: 12px;
+        font-weight: 500;
+
+        padding: 4px 6px;
+        border-radius: 2px;
+    }
+
