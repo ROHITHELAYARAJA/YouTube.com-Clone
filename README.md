@@ -13,9 +13,23 @@ This project was built as a front-end fundamentals exercise: the goal wasn't jus
 
 ## 📸 Preview
 
-![Header preview](./screenshots/header.png)
+Full page preview
 
 ![Full page preview](./screenshots/homepage.png)
+
+
+
+
+
+Header preview
+
+![Header preview](./screenshots/header.png)
+
+Sidebar preview
+
+![Sidebar preview](./screenshots/sidebar.png)
+
+
 
 ---
 
