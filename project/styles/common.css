@@ -3,4 +3,10 @@
         }
         body{
           margin: 0%;
+          padding-top: 75px;
+          background-color: black;
+          color: whitesmoke;
+          height: 2000px;
+          padding-left:87px ;
+          padding-right:16px ;
         }
